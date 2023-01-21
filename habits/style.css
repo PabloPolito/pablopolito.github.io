@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #380ba1;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container-top-calendar {
+  border-radius: 0 0 50px 50px;
+  width: fit-content;
+}
+
+.container {
+  background-color: #000000;
+  border-radius: 0 0 50px 50px;
+  width: fit-content;
+}
+
+.container-calendar {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-calendar {
+  height: 50px;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.barrettes {
+  height: 50px;
+  width: 80px;
+  background-color: black;
+  display: flex;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px;
+  position: relative;
+  
+  background-color: #09090a;
+  
+}
+
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8B5CF6;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+
+  gap: 12px;
+}
+
+#form-habits {
+  display: flex;
+  padding: 140px 90px 45px;
+  width: fit-content;
+
+}
+
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 55px 0;
+  
+}
+
+.habit {
+  
+  width: 64px;
+  height: 64px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.days {
+  display: flex;
+  margin-left: 32px;
+  gap: 42px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.day div {
+  margin-bottom: 8px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  line-height: 125%;
+  color: #A1A1AA
+
+}
+
+input {
+  appearance: none;
+  -webkit-apperance: none;
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272A;
+  border-radius: 8px;
+  background: #18181B;
+
+}
+
+input:checked {
+  background: #662bf0;
+  border: 2px solid #7753e4;
+}
+
+@media (max-width: 1500px) {
+  .add {
+    display: none;
+  }
+}
