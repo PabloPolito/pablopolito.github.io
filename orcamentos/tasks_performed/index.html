@@ -13,21 +13,13 @@
       <div class="container-wide banner">
         <div class="container">
           <h1>
-            CONCREFER
+            ATIVIDADES REALIZADAS
           </h1>
         </div>
       </div>
       <div class="container">
         <div class="card">
-          <header>
-            <p>Orçamento</p>
-            <div class="hours">
-            <h3 style="opacity: 0.3">R$ 45,00</h3>
-            <span style="opacity: 0.3">Vlr/Hr</span>
-            <h3>Total: 20</h3>
-            <span>/hr</span>
-            </div>
-          </header>
+
           <table class="table table-hover">
             <thead>
               <tr>
@@ -35,54 +27,118 @@
                 <td class="left row-header">Descrição</td>
                 <td class="row-header"> Hora/Dia</td>
                 <td class="row-header">Hora/Tarefa</td>
-                <td class="row-header">Tipo/Hora</td>
+                <td class="row-header">Tarefa</td>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="line">
                 <td class="left">1</td>
-                <td class="left">Alterar forma de tabela de preço por cliente (consumidor / distribuidor)</td>
+                <td class="left">Chamado para ajustar ambiente desenvolvimento #16154831 </br></br>
+                  - Comentado a user function fValTab do fonte LIB.PRW para não bloquear tabela de preço na hora de criar novo cliente selecionando o tipo</br>
+                  - Ajustado val. usuário do campo A1_TABELA U_fValTab(M->A1_TIPO,M->A1_TABELA)</td>
                 <td>8h</td>
                 <td>2h</td>
-                <td>Fechado</td>
+                <td>Finalizado</td>
+              </tr>
+              <tr>
+                <td class="left">2</td>
+                <td class="left">Criando validação de quais campos imprimir COFATR02.prw </br></br>
+                  - Reposicionamento de campos </br>
+                  - Ajuste no tamanho dos box do layout</br>
+                  - Criação de pergunta no parambox para impressão sem valor </br>
+                  - Validação impressão de campos</td>
+                <td>8h</td>
+                <td>2h</td>
+                <td>Finalizado</td>
               </tr>
               <tr class="line">
-                <td class="left">2</td>
-                <td class="left">Imprimir pedido de venda sem valor</td>
-                <td>8h</td>
-                <td>2h</td>
-                <td>Fechado</td>
-              </tr>
-              <tr>
                 <td class="left">3</td>
-                <td class="left">Efetuar ajustes no formato do pedido de compra</td>
+                <td class="left">Criando observações impressão pedido de compra COCOMR01.prw </br></br>
+                  - Mudança tipo de layout para paisagem</br>
+                  - Relacionamento de item com NCM do produto (SB1)</br>
+                  - Relacionamento de centro de custo</br>
+                  - Relacionando campo de finalidade</td>
                 <td>8h</td>
                 <td>5h</td>
-                <td>Fechado</td>
-              </tr>
-              <tr class="line">
-                <td class="left">4</td>
-                <td class="left">Ajustar a ordem das colunas da tela de pedidos de compra</td>
-                <td>8h</td>
-                <td>1h</td>
-                <td>Fechado</td>
+                <td>Finalizado</td>
               </tr>
               <tr>
-                <td class="left">5</td>
-                <td class="left">Recibo do contas a receber.Foi desenvolvido um rebibo para ser impresso no contas a receber quando o mesmo estiver baixado.</td>
+                <td class="left">4</td>
+                <td class="left">Remanejado as ordens dos campos</br></br>
+                  - Criação de campos de NCM, DESCRIÇÃO e CENTRO DE CUSTO</br>
+                  - Atualização de dicionario</br>
+                  - Criação de gatilho para atualização de registro</td>
                 <td>8h</td>
-                <td>7h</td>
-                <td>Aberto</td>
+                <td>1h</td>
+                <td>Finalizado</td>
               </tr>
-              <tr class="line">
+              <tr  class="line">
+                <td class="left">5</td>
+                <td class="left">Criação validações COFINR04.prw </br></br>
+                  - Refaturação do fonte.</br>
+                  - Reposicionando e criando novas posições de campos</br>
+                  - Criando parambox para adicionar filtros chamando na função de criação de usuário</br>
+                  - Tirando validação de titulos baixados que não estavam trazendo os compensados</br>
+                  - Criando query com filtro dos campos do parambox</br>
+                  - Montando cabelho e itens com os filtros das notas</br>
+                  - Validação de campos numericos</br>
+                  - Criando repetição de item a item para validação de valor</br>
+                  - Reposicionando campos do layout para melhor adaptação</br>
+                  - Criação E1_X_BANCO e relacionando com tabela de movimentação</td>
+                <td>8h</td>
+                <td>7h + 3h</td>
+                <td>Finalizado</td>
+              </tr>
+              <tr class="line-end">
                 <td class="left">6</td>
-                <td class="left">Fixar 100% pagto comissão na baixa do contas receber</td>
+                <td class="left">Criação de validação campo comissão</br></br>
+                  - Alteração de inicialização padrão campo A3_ALBAIXA</br>
+                  - Atualização de dicionario</td>
                 <td>8h</td>
                 <td>3h</td>
-                <td>Fechado</td>
+                <td>Finalizado</td>
               </tr>
             </tbody>
           </table>
+          <footer>
+            <div class="complements">
+              <h3> Produção</h3>
+              <span>
+                1. Compilar LIB.PRW e tirar validação do campo A1_TABELA</br>
+                2. Compilar COFATR02.prw</br>
+                3. Compilar COCOMR01.prw</br>
+                4. Alterar ordem dos campos</br>
+                &nbsp&nbsp&nbsp&nbspCriar campo C7_X_CTDES</br>
+                &nbsp&nbsp&nbsp&nbspCriar gatilho C7_CC para C7_X_CTDES POSICIONE("CTT",1,xFilial("CTT")+M->C7_CC,"CTT_DESC01")</br>
+                &nbsp&nbsp&nbsp&nbspCriar campo C7_X_NCM POSICIONE("CTT",1,xFilial("CTT")+M->C7_CC,"CTT_DESC01")</br>
+                &nbsp&nbsp&nbsp&nbspCriar gatilho POSICIONE("SB1",1,xFilial("SB1")+SC7->C7_PRODUTO,"B1_POSIPI")</br>
+                5. Compilar COFINR04.prw</br>
+                
+                6. Colocar validação de campo A3_ALBAIXA</span>
+            </div>
+            <div class="bank">
+              <div class="bank-info">
+                <h3 class="total-bank">Total</h3>
+                <span class="horas" ><b style="opacity: 0.3">Horas: </b>23h</span>
+                <span class="valor"><b style="opacity: 0.3">Valor:</b> R$ 1035,00</span>
+                
+              </div>
+            </div>
+            <div class="bank-2">
+              <div class="bank-info-2">
+                <h3 class="total-bank">Informações de Pagamento</h3>
+                <span class="banco"><b style="opacity: 0.3">Banco: </b>336 - (C6 S.A)</span>
+                <span class="agencia"><b style="opacity: 0.3">Agencia: </b>0001</span>
+                <span class="conta"><b style="opacity: 0.3">Conta: </b>7242712-4</span>
+                <span class="nome"><b style="opacity: 0.3">Nome: </b>PABLO PIETRO POLITO</span>
+
+                <span class="pix"><b style="opacity: 0.3">Chave: </b>453.836.278-63</span>
+                <div class="qrcode">
+                  <img src="pix.jpeg" alt="qr-code pix">
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </div>
