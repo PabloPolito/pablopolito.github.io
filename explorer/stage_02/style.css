@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#hero {
+    width: 592px;
+    margin: auto;
+}
+
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 56px;
+    margin-bottom: 32px;
+
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+span, a {
+    color: #FF9900;
+}
+
+p {
+    color: #7D7987;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+footer {
+    margin-top: 8px;
+}
+
+footer a + a {
+    margin-left: 27px;
+}
+
+.environments {
+    margin: 0 auto 72px
+}
+
+.line {
+    margin-top: 72px;
+    border: 1px #ECEFF2 solid ;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    margin: 0;
+}
