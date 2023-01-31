@@ -86,6 +86,7 @@ footer {
     justify-content: center;
     border-top: 1px #00BFA6 solid;
     margin-top: 80px;
+    margin-bottom: 20px;
     padding-top: 30px;
     box-sizing: content-box;
 }
